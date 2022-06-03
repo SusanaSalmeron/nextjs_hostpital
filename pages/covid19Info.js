@@ -26,7 +26,7 @@ export default function CovidInfo() {
                 <h3>ADVICES AND RECOMMENDATIONS WHEN VISITING OUR FACILITIES </h3>
                 <article>
                     <p>
-                        The hospital has drawn up protocols and implemented prevention measures to guarantee the health of patients and professionals. For this reason, it`&apos`s very important that patients and companions follow the established advice and recommendations at all times in order to avoid possible infections.
+                        The hospital has drawn up protocols and implemented prevention measures to guarantee the health of patients and professionals. For this reason, it&apos;s very important that patients and companions follow the established advice and recommendations at all times in order to avoid possible infections.
                     </p>
                 </article>
                 <article>

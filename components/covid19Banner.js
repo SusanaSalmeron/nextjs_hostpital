@@ -7,7 +7,7 @@ export default function Covid19() {
         <>
             <div className={styles.covid}>
                 <article>
-                    <p>Our professionals are working for everyone`&apos`s health. Follow the recommendations of the experts:
+                    <p>Our professionals are working for everyone&apos;s health. Follow the recommendations of the experts:
                         Always wear a mask, perform hand hygiene frequently and keep a safe distance whenever possible
                     </p>
                     <Link href="/covid19Info">
