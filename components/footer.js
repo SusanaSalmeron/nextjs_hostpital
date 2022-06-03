@@ -26,7 +26,7 @@ export default function Footer() {
                         </Link>
                     </li>
                     <li>
-                        <Link href={"/contactUs/"} className={styles.contact}>
+                        <Link href={"/js-contactForm/"} className={styles.contact}>
                             Contact Us
                         </Link>
                     </li>

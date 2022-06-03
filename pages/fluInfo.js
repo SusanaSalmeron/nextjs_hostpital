@@ -27,7 +27,7 @@ export default function FluInfo() {
                     <p>
                         Influenza is a very contagious disease that attacks your respiratory system and normally resolves on its own, but sometimes can be deadly.
                         It occurs in epidemic waves, generally in the winter months.
-                        Though the annual influenza vaccine isn`&apos`t 100% effective, it`&apos`s still your best defense against the flu.
+                        Though the annual influenza vaccine isn&apos;t 100% effective, it;s still your best defense against the flu.
 
                     </p>
                 </article>
