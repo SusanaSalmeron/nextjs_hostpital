@@ -9,6 +9,7 @@ import styles from '../styles/Home.module.css';
 import Covid19Banner from '../components/covid19Banner';
 import FluCampaignBanner from '../components/fluCampaignBanner';
 import DoctorPictureList from '../components/doctorPictureList';
+import Link from 'next/link';
 
 
 
@@ -21,8 +22,13 @@ export default function Home() {
             <Image src={logo} alt="logo" />
           </figure>
         </div>
-        {/* <div className={styles.button}>
-          {
+        <div className={styles.button}>
+          <Link href="/js-loginForm">
+            <button>LOGIN</button>
+          </Link>
+
+          <button>SIGN IN</button>
+          {/* {
             checkValidToken() ? <LogoutButton
               setLoggedIn={setLoggedIn}
             /> :
@@ -32,8 +38,8 @@ export default function Home() {
                 name={'login'}
               />
           }
-          {button()}
-        </div> */}
+          {button()}*/}
+        </div>
       </div>
       <div className={styles.gallery}>
         <figure className={styles.picture1}>

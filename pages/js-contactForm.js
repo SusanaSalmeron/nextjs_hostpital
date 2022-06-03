@@ -12,9 +12,10 @@ const baseUrl = 'http://localhost:3001/v1/management';
 
 export default function ContactForm() {
     const router = useRouter()
-    let handleSubmit
-    try {
-        handleSubmit = async (e) => {
+
+
+    const handleSubmit = async (e) => {
+        try {
             e.preventDefault()
             const body = {
                 name: e.target.name.value,
@@ -22,7 +23,6 @@ export default function ContactForm() {
                 subject: e.target.subject.value,
                 message: e.target.message.value
             }
-            console.log(body)
             const emailSent = await axios.post(`${baseUrl}/contact`, body)
             if (emailSent) {
                 await Swal.fire({
@@ -36,13 +36,21 @@ export default function ContactForm() {
             }
             return true
         }
-    } catch (err) {
-        if (err.response) {
-            console.log(err.response.status)
-        } else {
-            console.log('Error', err.message)
+        catch (err) {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Your inquiry has not been sent',
+                showConfirmButton: false,
+                timer: 3000
+            })
+            if (err.response) {
+                console.log(err.response.status)
+            } else {
+                console.log('Error', err.message)
+            }
+            return false
         }
-        return false
     }
 
     return (
@@ -68,7 +76,6 @@ export default function ContactForm() {
                         required
                         minLength="5"
                         maxLength="50"
-
                     />
                     <input
                         type="text"
@@ -76,7 +83,6 @@ export default function ContactForm() {
                         name="email"
                         placeholder="Email"
                         required
-                        pattern="[a-zA-Z0-9.! #$%&'*+/=?"
                         title="email pattern should be email@email.com"
                     />
                     <input
